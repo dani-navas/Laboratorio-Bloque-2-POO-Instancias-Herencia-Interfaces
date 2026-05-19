@@ -1,0 +1,14 @@
+CLASS zcl_lab_23_company_dnavas DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC
+  GLOBAL FRIENDS ZCL_LAB_24_PARTNER_dnavas.
+
+  PUBLIC SECTION.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+    DATA capital TYPE string value 'Barcelona'.
+ENDCLASS.
+
+CLASS zcl_lab_23_company_dnavas IMPLEMENTATION.
+ENDCLASS.
