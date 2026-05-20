@@ -87,6 +87,45 @@ CLASS zcl_lab_10_ejec_dnavas IMPLEMENTATION.
 *    out->write( lo_collaborator->get_company_capital( ) ).
 
 
+*    DATA(lo_flight) = NEW zcl_lab_26_flights_dnavas( ).
+*    lo_flight->zif_lab_01_flight_dnavas~set_connid( i_connid = '1234' ).
+*    lo_flight->zif_lab_01_flight_dnavas~get_connid( IMPORTING e_connid = DATA(e_connid) ) .
+*    out->write( |Conn ID:{ e_connid } | ).
+
+
+*    DATA(lo_customer) = NEW zcl_lab_26_flights_dnavas( ).
+*    lo_customer->zif_lab_02_customer_dnavas~get_customer(
+*      EXPORTING
+*        iv_customer_id =  '01'
+*      RECEIVING
+*        r_value        = DATA(r_value) ).
+*    out->write( r_value ).
+
+
+*   data(lo_airport) = new zcl_lab_26_flights_dnavas( ).
+*     lo_airport->zif_lab_03_airports_dnavas~get_airports(
+*     EXPORTING
+*       v_airport_id = 'HAM'
+*     RECEIVING
+*       r_value      = data(r_value) ).
+*   out->write( r_value ).
+
+
+    DATA(lo_factory) = NEW zcl_lab_28_logistics_dnavas( ).
+    out->write( |Metodo: { lo_factory->merchandise_output( ) } |  ).
+    out->write( |Metodo: { lo_factory->production_line( ) } |  ).
+    out->write( |Metodo: { lo_factory->input_products( ) } |  ).
+
+
+
+
+
+
+
   ENDMETHOD.
+
+
+
+
 ENDCLASS.
 

@@ -1,0 +1,20 @@
+CLASS zcl_lab_28_logistics_dnavas DEFINITION INHERITING FROM ZCL_LAB_27_FACTORY_dnavas
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    METHODS: production_line REDEFINITION.
+    METHODS: input_products REDEFINITION.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+CLASS zcl_lab_28_logistics_dnavas IMPLEMENTATION.
+  METHOD production_line.
+    rv_production = 'PRODUCTION_LINE'.
+  ENDMETHOD.
+  METHOD input_products.
+    rv_input = 'INPUT_PRODUCTS'.
+  ENDMETHOD.
+ENDCLASS.
